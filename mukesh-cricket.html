@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MUKESH CRICKET Prediction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a2e0a5f9dc.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            height: 100%;
+            font-family: 'Poppins', sans-serif;
+            background: url('img/Munna\ Bhaiya.jpg') no-repeat center center/cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero {
+            position: relative;
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(8px);
+            padding: 40px 30px;
+            border-radius: 20px;
+            color: #fff;
+            max-width: 480px;
+            text-align: center;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+        }
+
+        .content {
+            margin-bottom: 25px;
+        }
+
+        .heading1 {
+            font-size: 1.5rem;
+            color: #ffd700;
+            margin-bottom: 5px;
+        }
+
+        .content h2 {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: white;
+        }
+
+        #countdown {
+            font-size: 3rem;
+            color: #00ffaa;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        .second.counter {
+            font-size: 1.1rem;
+            color: #ccc;
+            margin-bottom: 30px;
+        }
+
+        .rotted img {
+            width: 140px;
+            border-radius: 50%;
+            border: 3px solid #ffd700;
+            box-shadow: 0 0 15px #00ffaa;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background: linear-gradient(45deg, #0088cc, #005fa3);
+            padding: 14px 28px;
+            border-radius: 50px;
+            color: #fff;
+            font-weight: 700;
+            text-decoration: none;
+            box-shadow: 0 0 10px #00bfff;
+            display: inline-block;
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #00bfff;
+        }
+
+        .btn i {
+            margin-left: 8px;
+        }
+
+        .heading4 {
+            font-size: 1.2rem;
+            color: #ffd700;
+            font-weight: 700;
+            line-height: 1.4;
+        }
+    </style>
+
+
+    <!-- Meta Pixel Code -->
+    <script>
+        ! function(f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function() {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1274989564219447');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://www.facebook.com/tr?id=1274989564219447&ev=PageView&noscript=1"/>
+</noscript>
+    <!-- End Meta Pixel -->
+
+
+</head>
+
+<body>
+
+    <div class="hero">
+        <div class="content">
+            <h1 class="heading1">LUCKY PUNJABI EXPERT 🏏<br>PREDICTION</h1>
+            <h2>WELCOME IN LUCKY PUNJABI EXPERT 🏏</h2>
+        </div>
+
+        <span class="timer" id="countdown">1:00</span>
+        <div class="second counter">Seconds Left</div>
+
+        <div class="rotted">
+            <img src="img/MUKESH.jpg" alt="LUCKY PUNJABI EXPERT 🏏" />
+        </div>
+
+        <div class="button">
+            <a href="https://t.me/+WcNux8OhoMM5MGU9" class="btn btn--stripe" target="_blank" rel="noopener noreferrer">
+        JOIN THE CHANNEL NOW <i class="fa-brands fa-telegram" aria-hidden="true"></i>
+      </a>
+        </div>
+
+        <h4 class="heading4">PREDICTION GUY 🏏</h4>
+        <h4 class="heading4">MUKESH HERE 🫶</h4>
+        <h4 class="heading4">WORKING SINCE 2017</h4>
+    </div>
+
+    <script>
+        let seconds = 60;
+        const countdown = document.getElementById("countdown");
+
+        setInterval(() => {
+            seconds--;
+            if (seconds < 0) seconds = 60;
+            const min = Math.floor(seconds / 60);
+            const sec = seconds % 60;
+            countdown.textContent = `${min}:${sec < 10 ? '0' + sec : sec}`;
+        }, 1000);
+    </script>
+
+</body>
+
+</html>
